@@ -1,2 +1,2 @@
-# 2024
-2024 repository for coding practice
+# JS 2025
+repository for learning JS in 2025
