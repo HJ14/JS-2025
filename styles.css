@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Clock 스타일 */
+#clock {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Greeting 스타일 */
+#greeting {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* 폼 스타일 */
+form {
+  display: flex;
+  flex-wrap: wrap; /* 필요시 줄바꿈 */
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 입력 필드 스타일 */
+input[type='text'] {
+  flex: 1; /* 적절한 크기 조정 */
+  max-width: 300px;
+  padding: 0.5rem;
+  border: 2px solid #ccd6f6;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus {
+  border-color: #3d5a80;
+}
+
+/* 버튼 스타일 */
+input[type='submit'] {
+  background-color: #3d5a80;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type='submit']:hover {
+  background-color: #2a4d69;
+}
+
+/* To-do list 스타일 */
+#todo-list {
+  list-style: none;
+  max-width: 300px;
+  margin-top: 1rem;
+}
+
+/* li 기본 스타일 */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #ccd6f6;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+/* span 스타일 */
+li span {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  word-wrap: break-word; /* 텍스트가 길 경우 줄바꿈 */
+}
+
+/* button 스타일 */
+li button {
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #d62828;
+}
+
+li button:focus {
+  outline: 2px solid #f1faee;
+  outline-offset: 2px;
+}
+
+/* 섹션 타이틀 */
+h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 1rem;
+  text-align: center;
+}
+
+/* Weather & Location */
+#geolocation {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
